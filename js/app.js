@@ -250,9 +250,172 @@ month.*/
 
 /* 14- Write a program to input marks of five subjects 
 Physics, Chemistry, Biology, Mathematics and Computer 
-  , Find percentage and grade */
+  , Find percentage and grade Percentage >= 90%: Grad A 
+Percentage >= 80%: Grad B 
+Percentage >= 70%: Grad C 
+Percentage >= 60%: Grad D 
+Percentage >= 40%: Grad E 
+Percentage < 40%: Grad F */
 
+//   var physics =Number(window.prompt('Enter the degree of physics'));
+//   var chemistry =Number(window.prompt('Enter the degree of chemistry'));
+//   var biology =Number(window.prompt('Enter the degree of biology'));
+//   var mathematics =Number(window.prompt('Enter the degree of mathematics'));
+//   var computer =Number(window.prompt('Enter the degree of computer'));
+ 
+// var total = physics+chemistry+biology+mathematics+computer;
+// var percentage = total/500*100;
+
+// if(percentage>=90){
+//   console.log('percentage ='+' ' + percentage+'%');
+//   console.log('Grade = A');
+// }
+// else if(percentage>=80){
+//   console.log('percentage ='+' ' + percentage+'%');
+//   console.log('Grade = B');
+// }
+// else if(percentage>=70){
+//   console.log('percentage ='+' ' + percentage+'%');
+//   console.log('Grade = C');
+// }
+// else if(percentage>=60){
+//   console.log('percentage ='+' ' + percentage+'%');
+//   console.log('Grade = D');
+// }
+// else if(percentage>=40){
+//   console.log('percentage ='+' ' + percentage+'%');
+//   console.log('Grade = E');
+// }
+// else if(percentage<40){
+//   console.log('percentage ='+' ' + percentage+'%');
+//   console.log('Grade = F');
+// }
+
+
+///////////////////////////////////////////////////////
+
+/* 15- Write a program to print total number of days in month  */
+
+
+switch (totalDaysInMonth) {
+  case 1: // January
+  case 3: // March
+  case 5: // May
+  case 7: // July
+  case 8: // August
+  case 10: // October
+  case 12: // December
+    console.log("This month has 31 days.");
+    break;
+
+  case 4: // April
+  case 6: // June
+  case 9: // September
+  case 11: // November
+    console.log("This month has 30 days.");
+    break;
+
+  case 2: // February
+    console.log("This month has 28 days (29 in a leap year).");
+    break;
+
+  default:
+    console.log("Invalid month number! Please enter a number from 1 to 12.");
+}
+
+
+///////////////////////////////////////////////////////////////
+ 
+/* 16- Write a program to check whether an alphabet is vowel or consonant*/
+
+switch(true){
+    case character == 'a':
+    case character == 'e':
+    case character == 'i':
+    case character == 'o':
+    case character == 'u':
+        console.log(character+' '+'is vowel');
+        break;
+        default:
+            console.log(character+' '+'is consonant')
+}
+
+///////////////////////////////////////////////////////////////
+
+/* 17- Write a program to find maximum between two numbers */
+var x1;
+var x2;
+
+switch(true){
+  case x1>x2:
+    console.log('The maximum ='+x1);
+    break;
+    case x1<x2:
+      console.log('The maximum = '+x2);
+      break;
+      default:
+        console.log('Both numbers are equal')
+
+}
+
+////////////////////////////////////////////////////////////////////
+
+/* 18-Write a program to check whether a number is even or odd */
   
+var number;
+
+switch(true){
+  case number%2===0:
+    console.log('The number is even');
+    break;
+    default:
+      console.log('The number is odd');
+}
+
+///////////////////////////////////////////////////////////////
+
+/* 19- Write a program to check whether a number is positive or negative or zero  */
+
+var number;
+
+switch(true){
+  case number<0:
+    console.log('The number is negative');
+    break;
+    case number>0:
+      console.log('The number is positive');
+      break;
+      default:
+        console.log('The number equal zero');
+        break;
+
+
+}
+ 
+////////////////////////////////////////////////////////////////////////
+
+/* 20-Write a program to create Simple Calculator */
+
+var firstNumber;
+var operator;
+var secondNumber;
+
+
+switch(operator){
+  case '*':
+    console.log(firstNumber * secondNumber);
+    break;
+  case '/':
+    console.log(firstNumber / secondNumber);
+    break;
+  case '+':
+    console.log(firstNumber+secondNumber);
+    break;
+  case '-':
+    console.log(firstNumber - secondNumber);
+    break;
+  
+}
 
 
 
